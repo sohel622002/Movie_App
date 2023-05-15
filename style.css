@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header{
+    max-width: 700px;
+    margin: auto;
+    padding-inline: 1em;
+    padding-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header h2{
+    font-weight: 300;
+}
+.header h2 span{
+    color: rgb(209, 143, 19);
+}
+
+.searchbar input, .searchbar button{
+    font-size: 16px;
+    padding: 5px 10px;
+    border: 1px solid lightgrey;
+}
+
+.searchbar button{
+    background-color: white;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.movie{
+    max-width: 20em;
+    border: 2px solid rgba(209, 143, 19, 0.304);
+    border-radius: 10px;
+    padding: 15px;
+    margin: auto;
+}
+
+.movie img{
+    width: 100%;
+    min-height: 428px;
+    border-radius: 10px;
+}
+
+.movie h2{
+    padding-top: .5rem;
+    text-align: center;
+    color: rgb(14, 14, 14);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.movie p{
+    text-align: center;
+    padding-top: 7px;
+    color: rgb(209, 143, 19);
+}
+
+.usefull_links{
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.btn{
+    padding: 10px 20px;
+    border: none;
+    background-color: rgba(209, 143, 19, 0.727);
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.fullMovie{
+    width: 100%;
+    padding: 10px;
+}
+
+.movieDesc img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.movieDesc h1{
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.movieDesc p{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+@media (max-width : 470px) {
+    .header{
+        flex-direction: column;
+    }
+    .header h2{
+        margin-bottom: 10px;
+    }
+}

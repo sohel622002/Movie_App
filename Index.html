@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="header">
+            <h2><span>AMZ</span> Movies</h2>
+            <div class="searchbar">
+                <form>
+                    <input placeholder="Search for Movies e.g. cars" id="input" />
+                    <button class="search_btn" id="input_btn" type="submit">search</button>
+                </form>
+            </div>
+        </div>
+        <div class="usefull_links">
+            <button class="btn popularMovies" onclick='getMovieList("popular")'>Popular</button>
+            <button class="btn topRatedMovies" onclick='getMovieList("top_rated")'>Top Rated</button>
+            <button class="btn upComingMovies" onclick='getMovieList("upcoming")'>Upcoming</button>
+        </div>
+        <div class="container"></div>
+        <div class="fullMovie"></div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
